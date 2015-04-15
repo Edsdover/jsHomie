@@ -31,9 +31,7 @@ function sumNumbers() {
     b = parseInt(b);
     return a + b;
   });
-  var $div = $('<div>');
-  $div.text(sum);
-  $('#output').append($div);
+  displayInput(sum);
 }
 
 function multiNums() {
@@ -42,9 +40,7 @@ function multiNums() {
     b = parseInt(b);
     return a * b;
   });
-  var $div = $('<div>');
-  $div.text(multi);
-  $('#output').append($div);
+  displayInput(multi);
 }
 
 function divideNums() {
@@ -53,9 +49,7 @@ function divideNums() {
     b = parseInt(b);
     return a / b;
   });
-  var $div = $('<div>');
-  $div.text(divide);
-  $('#output').append($div);
+  displayInput(divide);
 }
 
 function subNums() {
@@ -64,7 +58,11 @@ function subNums() {
     b = parseInt(b);
     return a - b;
   });
+  displayInput(sub);
+}
+
+function displayInput(message){
   var $div = $('<div>');
-  $div.text(sub);
+  $div.text(message);
   $('#output').append($div);
 }
