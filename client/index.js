@@ -14,7 +14,6 @@ function printToPage(){
     sumNumbers();
   }else{
     numbers.push(value);
-    console.log(sumNumbers(numbers));
     $('#output').text(oldText + ' ' + value);
     $('#input').val('');
   }
